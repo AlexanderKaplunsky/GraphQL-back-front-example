@@ -1,10 +1,6 @@
 # README
 
-How to run this app?
-
-- run back end
-
----
+How to run this app? 
 
 - yarn / or npm i
 - set your ipv4 in src/constants/host.js
