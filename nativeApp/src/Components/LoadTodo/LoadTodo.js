@@ -54,11 +54,11 @@ const LoadTodo = () => {
           ...styles.todoElementWrapper,
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between"
+          justifyContent: "center"
         }}
       >
         <Button
-          color="red"
+          color={state.isCompleted ? "green" : "red"}
           title={`Show ${state.isCompleted ? "current" : "completed"}`}
           onPress={setTypeOfTask}
         />

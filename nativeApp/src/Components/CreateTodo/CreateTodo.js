@@ -10,12 +10,15 @@ const CreateTodo = () => {
   const [description, setDescription] = useState("");
   const createTodo = () => {
     setDescription("");
-    AddTodo(description, { state, dispatch });
+    if (description !== "") {
+      AddTodo(description, { state, dispatch });
+    }
   };
   return (
     <View>
       <TextInput
         onChangeText={e => setDescription(e)}
+        placeholder="Create a new task..."
         value={description}
         multiline={true}
       />
